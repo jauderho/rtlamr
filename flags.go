@@ -165,7 +165,7 @@ type StringMap map[string]bool
 
 func (m StringMap) String() (s string) {
 	var keys []string
-	for key, _ := range m {
+	for key := range m {
 		keys = append(keys, key)
 	}
 	return strings.Join(keys, ",")

@@ -52,7 +52,7 @@ func (d Decoder) Log() {
 	log.Println("PacketLength:", d.Cfg.PacketLength)
 
 	var preambles []string
-	for preamble, _ := range d.preambleStrs {
+	for preamble := range d.preambleStrs {
 		preambles = append(preambles, preamble)
 	}
 
